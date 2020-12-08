@@ -14,6 +14,8 @@ grayColour="\e[0;37m\033[1m"
 
 if [ "$(id -u)" == "0" ]; then
 	#Start Script
+	sudo apt-get update -y
+	sudo apt-get install php python python2 python3 -y
 	clear
 	echo -e "\n\t${yellowColour}································································${endColour}\t"
         echo -e "\t${yellowColour} ██████╗ ██╗   ██╗██╗  ██╗ ██████╗  ██████╗ ███╗   ███╗ █████╗   ${endColour}\t"
@@ -22,9 +24,9 @@ if [ "$(id -u)" == "0" ]; then
         echo -e "\t${yellowColour} ██╔═══╝   ╚██╔╝  ██╔══██║██║   ██║██║   ██║██║╚██╔╝██║██╔══██║  ${endColour}\t"
         echo -e "\t${yellowColour} ██║        ██║   ██║  ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║██║  ██║  ${endColour}\t"
         echo -e "\t${yellowColour} ╚═╝        ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝  ${endColour}\t"
-	echo -e "\t${yellowColour}······················coded by @shutnik··························${endColour}\n\t"
+	echo -e "\t${yellowColour}·················coded by @shelkovnnikova························${endColour}\n\t"
 	#Opcions
-	modulo="ddos fbtool fsociety inshackle kithack lscript milerside recreator-phishing saycheese shellphish socialbox socialsploit weeman exit"
+	modulo="ddos fbtool fsociety inshackle kithack lscript milerside recreator-phishing saycheese shellphish socialbox socialsploit weeman back exit"
 	select opcion in $modulo;
 	do
 		if [ $opcion = "ddos" ]; then
@@ -55,6 +57,8 @@ if [ "$(id -u)" == "0" ]; then
 			cd tools/SocialSploit && bash install.sh && ./Sploit
 		elif [ $opcion = "weeman" ]; then
 			cd tools/weeman && python2 weeman.py
+		elif [ $opcion = "back" ]; then
+			cd ..
 		elif [ $opcion = "exit" ]; then
 			exit
 		else
