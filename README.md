@@ -13,5 +13,10 @@
 
 #### ./Pyhooma
 
-| distribution | working |
-|--------------|---------|
+| distribution | working     |
+|--------------|-------------|
+| Kali Linux   |  OK         |
+| Parrot OS    |  OK         |
+| Raspian      |  OK         |
+| Ubuntu       |  OK         |
+| Arch         |doesn't work |
